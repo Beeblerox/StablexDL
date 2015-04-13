@@ -10,14 +10,8 @@
 
     <assets path="assets" include="*" />
 
-    <haxelib name="nme" />
+    <haxelib name="openfl" />
     <haxelib name="actuate" />
 
     <classpath name="../../src" />
-
-    <ndll name="std" />
-    <ndll name="regexp" />
-    <ndll name="zlib" />
-    <ndll name="nme" haxelib="nme" />
-
 </project>

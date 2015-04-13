@@ -1,10 +1,12 @@
 package com.example;
 
-import nme.Assets;
-import nme.events.Event;
-import nme.events.MouseEvent;
-import nme.Lib;
-import nme.text.TextField;
+import openfl.Assets;
+import openfl.display.FPS;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.display.Sprite;
+import flash.Lib;
+import flash.text.TextField;
 import ru.stablex.sxdl.SxStage;
 import ru.stablex.sxdl.SxObject;
 
@@ -18,7 +20,7 @@ import ru.stablex.sxdl.SxObject;
 * StablexDL test
 *
 */
-class Main extends nme.display.Sprite {
+class Main extends Sprite {
 
     //sxStage instance
     static public var sxStage : SxStage;
@@ -36,7 +38,7 @@ class Main extends nme.display.Sprite {
         cnt.x = Lib.current.stage.stageWidth / 2;
         cnt.mouseEnabled = false;
         Lib.current.addChild(cnt);
-        Lib.current.addChild(new nme.display.FPS());
+        Lib.current.addChild(new FPS());
 
         //create sxStage
         sxStage = new SxStage();
